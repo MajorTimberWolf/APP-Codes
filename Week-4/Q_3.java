@@ -1,3 +1,5 @@
+//Write a java code to print the following pattern
+
 public class Q_3 {
     public static void main(String[] args) {
         int n = 5; //Number of rows
