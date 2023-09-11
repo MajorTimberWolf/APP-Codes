@@ -14,17 +14,18 @@ public class Tutorial5_2 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter String 1: ");
-        String str1 = sc.nextLine();
-        System.out.print("Enter String 2: ");
-        String str2 = sc.nextLine();
-        Tutorial5_2 obj = new Tutorial5_2();
-        if(obj.rotationallyEq(str1,str2)) {
-            System.out.print("Rotationally Equivalent");
-        }
-        else {
-            System.out.print("NOT Rotationally Equivalent");
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter String 1: ");
+            String str1 = sc.nextLine();
+            System.out.print("Enter String 2: ");
+            String str2 = sc.nextLine();
+            Tutorial5_2 obj = new Tutorial5_2();
+            if(obj.rotationallyEq(str1,str2)) {
+                System.out.print("Rotationally Equivalent");
+            }
+            else {
+                System.out.print("NOT Rotationally Equivalent");
+            }
         }
     }
 }

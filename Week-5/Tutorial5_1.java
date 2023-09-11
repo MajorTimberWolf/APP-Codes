@@ -9,10 +9,11 @@ public class Tutorial5_1 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Tutorial5_1 obj = new Tutorial5_1();
-        System.out.print("Enter the string: ");
-        String str = sc.nextLine();
-        System.out.print("Mirror Image: "+obj.mirrorImage(str));
+        try (Scanner sc = new Scanner(System.in)) {
+            Tutorial5_1 obj = new Tutorial5_1();
+            System.out.print("Enter the string: ");
+            String str = sc.nextLine();
+            System.out.print("Mirror Image: "+obj.mirrorImage(str));
+        }
     }
 }
